@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   title: "여록",
   description: "여행의 모든 순간, 나만의 이야기로 물들이다",
   manifest: "/manifest.json",
-  themeColor: "#ffffff",
+  themeColor: "#dffffff",
   icons: {
     other: [
       {
@@ -27,9 +27,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="ko">
       <body className={inter.className}>
-        <div className="relative left-1/2 -translate-x-1/2 top-0 h-screen w-screen sm:w-[500px]">
+        <div className="relative overflow-y-scroll h-screen w-screen bg-gray-200">
           {children}
         </div>
       </body>

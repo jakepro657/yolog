@@ -20,6 +20,7 @@ export const OnboardProvider = ({
   const [index, setIndex] = useState(0);
 
   const handleNext = () => {
+    console.log("handleNext")
     setIndex((prev) => prev + 1);
   };
 

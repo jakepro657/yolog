@@ -1,4 +1,6 @@
 "use client";
+import OnboardPage from "@/components/onboard/OnboardPage";
+import Link from "next/link";
 import React, { useEffect } from "react";
 
 export default function Home() {
@@ -15,5 +17,9 @@ export default function Home() {
     require("next-pwa/register");
   }, []);
 
-  return <main className="">ㅎㅇ</main>;
+  return (
+    <div className="flex flex-col items-center absolute pt-16 left-1/2 -translate-x-1/2 top-0 w-full h-full sm:w-[500px] bg-white">
+      <Link href={"/onboard"}>onboard</Link>
+    </div>
+  );
 }
