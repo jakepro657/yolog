@@ -20,11 +20,11 @@ const LargeIcon = ({ img }: LargeIconProps) => {
 };
 
 const Button = ({ onClick, label }: { onClick: () => void; label: string }) => {
-  return <button onClick={onClick}>{`${label}`}</button>;
+  return <button onClick={onClick}>{label}</button>;
 };
 
 const Title = ({ title }: { title: string }) => {
-  return <div>{`${title}`}</div>;
+  return <div>{title}</div>;
 };
 
 const Progress = () => {
@@ -32,7 +32,7 @@ const Progress = () => {
 };
 
 const Description = ({ description }: { description: string }) => {
-  return <div>{`${description}`}</div>;
+  return <div>{description}</div>;
 };
 
 const Screen = Object.assign(ForwardScreen, {
