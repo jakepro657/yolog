@@ -6855,6 +6855,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"dayjs@npm:^1.11.10":
+  version: 1.11.10
+  resolution: "dayjs@npm:1.11.10"
+  checksum: 10c0/4de9af50639d47df87f2e15fa36bb07e0f9ed1e9c52c6caa1482788ee9a384d668f1dbd00c54f82aaab163db07d61d2899384b8254da3a9184fc6deca080e2fe
+  languageName: node
+  linkType: hard
+
 "debug@npm:2.6.9, debug@npm:^2.6.9":
   version: 2.6.9
   resolution: "debug@npm:2.6.9"
@@ -12616,6 +12623,16 @@ __metadata:
   languageName: node
   linkType: hard
 
+"react-tailwindcss-datepicker@npm:^1.6.6":
+  version: 1.6.6
+  resolution: "react-tailwindcss-datepicker@npm:1.6.6"
+  peerDependencies:
+    dayjs: ^1.11.6
+    react: ^17.0.2 || ^18.2.0
+  checksum: 10c0/c1a9b8922c75454d3e3666c1a6e9daa1cb196efabd7d4c5238fb808f33c1a6f57c0fa42907990c6516c768571ca3fa3c7c6f501e4dd1f0de971ccb6c82535a78
+  languageName: node
+  linkType: hard
+
 "react@npm:^18":
   version: 18.2.0
   resolution: "react@npm:18.2.0"
@@ -15533,6 +15550,7 @@ __metadata:
     autoprefixer: "npm:^10.0.1"
     class-variance-authority: "npm:^0.7.0"
     clsx: "npm:^2.1.0"
+    dayjs: "npm:^1.11.10"
     eslint: "npm:^8"
     eslint-config-next: "npm:14.1.0"
     eslint-plugin-storybook: "npm:^0.8.0"
@@ -15543,6 +15561,7 @@ __metadata:
     postcss: "npm:^8"
     react: "npm:^18"
     react-dom: "npm:^18"
+    react-tailwindcss-datepicker: "npm:^1.6.6"
     sass: "npm:^1.71.1"
     storybook: "npm:^7.6.17"
     tailwind-merge: "npm:^2.2.1"

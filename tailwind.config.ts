@@ -26,6 +26,8 @@ const config = {
         PretendardBold: ["Pretendard-Bold", "sans-serif"],
       },
       colors: {
+        green_first: "#AFC98D", 
+        green_second: "#A0B97F",
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
