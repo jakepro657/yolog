@@ -27,7 +27,17 @@
   font-family: 'Pretendard-Regular';
   src: url('../../public/assets/fonts/Pretendard-Regular.otf');
 }
- 
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  user-select: none;
+}
+
+/*  
 @layer base {
   :root {
     --background: 0 0% 100%;
@@ -99,4 +109,4 @@
   body {
     @apply bg-background text-foreground;
   }
-}
+} */

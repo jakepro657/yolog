@@ -1,6 +1,9 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import Background from "@/components/Background";
+import VhProvider from "@/components/VhProvider";
+import { Suspense } from "react";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -8,7 +11,7 @@ export const metadata: Metadata = {
   title: "여록",
   description: "여행의 모든 순간, 나만의 이야기로 물들이다",
   manifest: "/manifest.json",
-  themeColor: "#dffffff",
+  themeColor: "#ffffff",
   icons: {
     other: [
       {
@@ -21,6 +24,13 @@ export const metadata: Metadata = {
   },
 };
 
+export const viewport: Viewport = {
+  initialScale: 1,
+  width: "device-width",
+  userScalable: false,
+  maximumScale: 1,
+};
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -29,9 +39,11 @@ export default function RootLayout({
   return (
     <html lang="ko">
       <body className={inter.className}>
-        <div className="relative overflow-y-scroll h-screen w-screen bg-gray-200">
-          {children}
-        </div>
+        <Suspense>
+          <VhProvider>
+            <Background>{children}</Background>
+          </VhProvider>
+        </Suspense>
       </body>
     </html>
   );

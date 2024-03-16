@@ -7,7 +7,7 @@ function MainPage({}: Props) {
     <div className=''>
         
     </div>
-  )
+  ) 
 }
 
 export default MainPage

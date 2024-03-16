@@ -1,4 +1,4 @@
-import { OnboardProvider } from "@/contexts/OnboardProgressProvider";
+import { NewProvider } from "@/contexts/NewProvider";
 import React from "react";
 
 type Props = {
@@ -7,9 +7,9 @@ type Props = {
 
 function layout({ children }: Props) {
   return (
-    <OnboardProvider>
+    <NewProvider>
       <div className="w-full h-full bg-white">{children}</div>
-    </OnboardProvider>
+    </NewProvider>
   );
 }
 
